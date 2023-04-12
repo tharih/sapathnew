@@ -13,14 +13,14 @@ const Header = () => {
         })
     })
   return (
-    <header className={`${
-        bg ? 'bg-tertiary h-20' : 'h-24'
+    <header 
+    className={`${ bg ? 'bg-tertiary h-20' : 'h-24'
     } flex items-center fixed top-0 w-full 
     text-white z-10 transition-all duration-300`}>
         <div className='container mx-auto h-full flex items-center justify-between'>
             {/* logo */}
             <a href='#'>
-                <h2 className='text-2xl leading-[24px] md:text-5xl md:leading-tight lg:text-3xl lg:leading-[1.2] font-bold md:tracking-[-2px]'>Sapath</h2>
+                <h2 className='text-2xl leading-[24px] md:text-5xl md:leading-tight lg:text-3xl lg:leading-[1.2] font-bold md:tracking-[-2px]'>Saptha</h2>
             </a>
             {/* nav */}
             <div className='hidden lg:block'>

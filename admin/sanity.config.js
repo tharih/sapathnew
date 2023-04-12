@@ -4,10 +4,10 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
 export default defineConfig({
-  name: 'default',
+  name: 'saptha',
   title: 'sapath',
 
-  projectId: '2l6g2x1d',
+  projectId: 'aswp9grg',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],

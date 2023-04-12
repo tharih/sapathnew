@@ -2,12 +2,31 @@ import React, { useState, useEffect} from 'react'
 import {projectsData} from '../data'
 import {projectsNav} from '../data'
 import Project from './Project'
+import { fetchCategory, fetchProject } from '../utils/fetchProject'
 
 
 const Projects = () => {
     const [item, setItem] = useState({ name: 'all'})
     const [projects, setProjects] = useState([])
     const [active, setActive] = useState(0)
+    const [project, setProject] = useState([])
+    const [loading, setLoading] = useState(false)
+
+    useEffect(() => {
+        setLoading(true);
+        fetchProject()
+          .then((res) => {
+            setProject(res);
+            console.log(res);
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+          .finally(() => {
+            setLoading(false);
+          });
+      }, []);
+
 
     useEffect(() => {
         // get projects base on item

@@ -8,9 +8,11 @@ const Portfolio = () => {
         <div className='container mx-auto'>
             <div className='flex flex-col items-center text-center'>
                 <h2 className='section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block'>My latest work</h2>
-                <p className='subtitle'>loram huirgfiugrtuiy dhgdhdfgiuoh ghifdoghogig ifdjgofighig
+                <p className='subtitle'>
+                  {/* loram huirgfiugrtuiy dhgdhdfgiuoh ghifdoghogig ifdjgofighig
                 gfhgighfghdfig hgoifhgfoighfiogh hgifdhgifghofdg
-                ighjoihgfoighfoighfdoighfdighog hgoifdhgoifghfoigh igfgdfgh</p>
+                ighjoihgfoighfoighfdoighfdighog hgoifdhgoifghfoigh igfgdfgh */}
+                </p>
             </div>
             <Projects />
         </div>

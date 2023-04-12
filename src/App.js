@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackToTopBtn from './components/BackToTopBtn';
+// import Hero2 from './components/Hero2';
 
 // import components
 
@@ -18,6 +19,7 @@ const App = () => {
    
     <Header />
     <Hero />
+    {/* <Hero2 /> */}
     <Brands />
     <About />
     <Skills />

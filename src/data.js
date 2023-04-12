@@ -160,13 +160,19 @@ export const projectsNav = [
     name: 'all',
   },
   {
-    name: 'UI/UX Design',
+    name: 'ERP',
   },
   {
-    name: 'web development',
+    name: 'web / mobile development',
   },
   {
-    name: 'branding',
+    name: 'Modern workplace consultancy',
+  },
+  {
+    name: 'Cybersecurity',
+  },
+  {
+    name: 'Photography',
   },
 ];
 

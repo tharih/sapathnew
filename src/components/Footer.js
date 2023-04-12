@@ -13,7 +13,7 @@ const Footer = () => {
                 })}
             </div>
             <div>
-                <h2>Sapath</h2>
+                <h2>Saptha</h2>
             </div>
             <p>&copy; 2023 Sapath Perera. All rights reserved.</p>
         </div>
