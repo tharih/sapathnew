@@ -2,7 +2,10 @@ import { client } from "../client";
 
 
 const query =`
-*[_type == "project"]`;
+*[_type == "project"]{
+    ...,
+    category->{title}
+}`;
  
 
 export const fetchProject = async() => {
