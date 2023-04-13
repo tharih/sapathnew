@@ -51,10 +51,10 @@ const TestimonialSlider = () => {
                   <h5 className="font-body text-2xl italic font-normal">
                     {testimonial?.description}
                   </h5>
-                </div>
-                <div>
+                <div className="mt-5">
                   <p className="text-lg text-primaryRed">{testimonial?.name}</p>
                   <p>{testimonial?.position}</p>
+                </div>
                 </div>
               </div>
             </SwiperSlide>

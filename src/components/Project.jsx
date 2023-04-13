@@ -5,7 +5,7 @@ import { urlFor } from "../client";
 const Project = ({ item }) => {
   return (
     <div key={item._id} className="flex flex-col items-center text-center">
-      <div className="mb-8">
+      <div className="mb-8 h-[400px]  overflow-hidden">
         <img
           className="rounded-2xl"
           src={urlFor(item.image.asset._ref).url()}
