@@ -52,7 +52,7 @@ const About = () => {
             <p className="mb-8">{about[0]?.description}</p> <br />
             <p className="mb-8">{about[0]?.description}</p>
           </div>
-          <a className="btn-red" href={resume} download={"resume.pdf"}>
+          <a className="btn-red" href={resume} download>
             {" "}
             Download CV
           </a>
