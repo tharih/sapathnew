@@ -28,7 +28,7 @@ const TestimonialSlider = () => {
   }, []);
 
   return (
-    <>
+    <section className="snap-center">
       <Swiper
         pagination={{ clickable: true }}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
@@ -61,7 +61,7 @@ const TestimonialSlider = () => {
           );
         })}
       </Swiper>
-    </>
+    </section>
   );
 };
 
