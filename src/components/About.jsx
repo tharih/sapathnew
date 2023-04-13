@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "../assets/img/about.webp";
 import { fetchAbout } from "../utils/fetchAbout";
 import { motion } from "framer-motion";
-
+import resume from "../assets/resume.pdf";
 const About = () => {
   const [about, setAbout] = useState("");
   const [loading, setLoading] = useState(false);
@@ -52,7 +52,10 @@ const About = () => {
             <p className="mb-8">{about[0]?.description}</p> <br />
             <p className="mb-8">{about[0]?.description}</p>
           </div>
-          <button className="btn-red"> Download CV</button>
+          <a className="btn-red" href={resume} download={"resume.pdf"}>
+            {" "}
+            Download CV
+          </a>
         </div>
       </div>
     </div>
