@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
           <div>{/* <h2>Sapath</h2> */}</div>
           <p>
-            &copy; {new Date().getFullYear()} Sapath Perera. All rights
+            &copy; {new Date().getFullYear()} Saptha Wanniarachchi. All rights
             reserved.
           </p>
         </div>
