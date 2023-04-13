@@ -10,6 +10,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTopBtn from "./components/BackToTopBtn";
+import State from "./components/State";
 // import Hero2 from './components/Hero2';
 
 // import components
@@ -25,6 +26,7 @@ const App = () => {
         <About />
       </section>
       <Skills />
+      {/* <State /> */}
       <Portfolio />
       <Services />
       <Testimonials />
