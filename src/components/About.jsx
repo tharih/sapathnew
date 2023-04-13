@@ -12,7 +12,7 @@ const About = () => {
     fetchAbout()
       .then((res) => {
         setAbout(res);
-        console.log(res);
+        // console.log(res);
       })
       .catch((error) => {
         console.log(error);

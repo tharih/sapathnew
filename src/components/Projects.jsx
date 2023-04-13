@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { projectsData } from "../data";
 import { projectsNav } from "../data";
 import Project from "./Project";
-import { fetchCategory, fetchProject } from "../utils/fetchProject";
+import {  fetchProject } from "../utils/fetchProject";
+import { fetchCategory } from "../utils/fetchCategory";
 
 const Projects = () => {
   const [item, setItem] = useState({ name: "all" });
@@ -10,6 +11,22 @@ const Projects = () => {
   const [active, setActive] = useState(0);
   const [project, setProject] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [category, setCategory] = useState([]);
+
+  useEffect(() => {
+    setLoading(true);
+    fetchCategory()
+      .then((res) => {
+        setCategory(res);
+        console.log( res);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
   useEffect(() => {
     setLoading(true);

@@ -17,7 +17,7 @@ const TestimonialSlider = () => {
     fetchTestimonials()
       .then((res) => {
         setTestimonial(res);
-        console.log(res);
+        // console.log(res);
       })
       .catch((error) => {
         console.log(error);

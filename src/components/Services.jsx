@@ -13,7 +13,7 @@ const Services = () => {
     fetchService()
       .then((res) => {
         setService(res);
-        console.log(res);
+        // console.log(res);
       })
       .catch((error) => {
         console.log(error);
