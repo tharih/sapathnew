@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        bgScroll ? "bg-white h-20" : "h-24"
+        bgScroll ? "md:bg-white h-20" : "md:h-24"
       } flex items-center fixed top-0 w-full 
     text-white z-50 transition-all duration-300`}
     >

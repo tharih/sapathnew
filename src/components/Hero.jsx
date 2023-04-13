@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[100vh] flex items-center bg-primary bg-cover bg-center bg-no-repeat py-32 lg:py-0 overflow-hidden bg-[url('https://kalvin.netlify.app/images/background/home-banner-bg.jpg')] banner-after"
+      className="h-[100vh] flex items-center bg-primary bg-cover bg-center bg-no-repeat overflow-hidden bg-[url('https://kalvin.netlify.app/images/background/home-banner-bg.jpg')] banner-after"
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
