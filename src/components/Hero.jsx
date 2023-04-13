@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
       <Link
         to="about"
-        activeClass="active"
+        activeclassName="active"
         spy={true}
         smooth={true}
         duration={500}
@@ -72,7 +72,7 @@ const Hero = () => {
       >
         <path
           fill="#1C1D24"
-          class="p-curve"
+          className="p-curve"
           d="M0,96.1c109.9,67.5,145.1,201.1,329.6,202.5S1043.2,99.5,1400,0v300H0V96.1z"
         />
       </svg>
