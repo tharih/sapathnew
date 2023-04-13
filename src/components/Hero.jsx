@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-[100vh] flex items-center bg-primary bg-cover bg-center bg-no-repeat overflow-hidden bg-[url('https://kalvin.netlify.app/images/background/home-banner-bg.jpg')] banner-after"
+      className="h-screen flex items-center bg-[#1C1D24] bg-cover bg-center bg-no-repeat overflow-hidden bg-[url('https://kalvin.netlify.app/images/background/home-banner-bg.jpg')] banner-after"
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
@@ -62,7 +62,7 @@ const Hero = () => {
         />
       </Link>
       <svg
-        className="absolute bottom-0 w-[100vw] left-0 z-[5] h-30"
+        className="absolute bottom-[-1px] w-full left-0 z-[5]"
         id="home-svg"
         xmlns="http://www.w3.org/2000/svg"
         x="0px"

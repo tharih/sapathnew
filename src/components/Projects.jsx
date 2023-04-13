@@ -7,7 +7,7 @@ import { fetchCategory } from "../utils/fetchCategory";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Projects = () => {
-  const [filterItem, setFilterItem] = useState("All");
+  const [filterItem, setFilterItem] = useState("");
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
   const [project, setProject] = useState([]);
