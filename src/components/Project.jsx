@@ -7,7 +7,7 @@ const Project = ({ item }) => {
     <div key={item._id} className="flex flex-col items-center text-center">
       <div className="mb-8 h-[400px]  overflow-hidden">
         <img
-          className="rounded-2xl"
+          className="rounded-2xl object-cover"
           src={urlFor(item.image.asset._ref).url()}
           alt=""
         />
