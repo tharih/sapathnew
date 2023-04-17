@@ -57,6 +57,10 @@ export const navigation = [
     href: 'portfolio',
   },
   {
+    name: 'photography',
+    href: 'photography',
+  },
+  {
     name: 'services',
     href: 'services',
   },
@@ -171,9 +175,9 @@ export const projectsNav = [
   {
     name: 'Cybersecurity',
   },
-  {
-    name: 'Photography',
-  },
+  // {
+  //   name: 'Photography',
+  // },
 ];
 
 // skill

@@ -8195,6 +8195,22 @@ react-icons@^4.3.1:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.8.0.tgz#621e900caa23b912f737e41be57f27f6b2bff445"
   integrity sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==
 
+react-ig-feed@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/react-ig-feed/-/react-ig-feed-1.7.0.tgz#55844aad8c86bc34bfd2589fecdd2101e99f24eb"
+  integrity sha512-eRnpdPaHfBihIEzJaQfXyOYTK9Mi7+QuEqjXmHeTwiSy0nI91t9gneioKPBWrcSn3zoW7ZGWXii2S3c7bQYlGw==
+
+react-instagram-authless-feed@jamesmoriarty/react-instagram-authless-feed#v2.0.0:
+  version "2.0.0"
+  resolved "https://codeload.github.com/jamesmoriarty/react-instagram-authless-feed/tar.gz/14e9820fb4c5c54d44bd673139b33e4fe49786b5"
+
+react-instagram-embed@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-instagram-embed/-/react-instagram-embed-3.0.0.tgz#a32af7755ff6e46c3914ae1c07ccd78aaafd43ac"
+  integrity sha512-9X/t1J2YXj76iYTnCQx7SQ7DwVNxQOMpE0mnEDgKM9c6z1m7THDmk+kxhdGOrxULSjSZMAwxSxwgRMgT9jEqng==
+  dependencies:
+    type-fest "^1.2.2"
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -9453,6 +9469,11 @@ type-fest@^0.21.3:
   version "0.21.3"
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-0.21.3.tgz"
   integrity sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==
+
+type-fest@^1.2.2:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.4.0.tgz#e9fb813fe3bf1744ec359d55d1affefa76f14be1"
+  integrity sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==
 
 type-is@~1.6.18:
   version "1.6.18"

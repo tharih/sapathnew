@@ -13,6 +13,8 @@ import BackToTopBtn from "./components/BackToTopBtn";
 import State from "./components/State";
 import { BsArrowUp } from "react-icons/bs";
 import { Link } from "react-scroll";
+import Instagram from "./components/Instagram";
+import Photo from "./components/photo";
 // import Hero2 from './components/Hero2';
 
 // import components
@@ -50,9 +52,11 @@ const App = () => {
       <Skills />
       {/* <State /> */}
       <Portfolio />
+      <Photo />
       <Services />
       <Testimonials />
       <Contact />
+      {/* <Instagram /> */}
       <Footer />
       <BackToTopBtn />
     </div>
