@@ -7,130 +7,78 @@ import { fetchCategory } from "../utils/fetchCategory";
 import { motion, AnimatePresence } from "framer-motion";
 import Photography from "./photography";
 import { fetchImage } from "../utils/fetchImage";
+import { urlFor } from "../client";
+import Image from "../assets/img/about.webp";
+
 
 const Photographys = () => {
-  const [filterItem, setFilterItem] = useState("");
   const [images, setImages] = useState([]);
-  const [active, setActive] = useState(0);
-  const [project, setProject] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [category, setCategory] = useState([]);
+ 
 
-//   useEffect(() => {
-//     setLoading(true);
-//     fetchCategory()
-//       .then((res) => {
-//         setCategory(res);
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       })
-//       .finally(() => {
-//         setLoading(false);
-//       });
-//   }, []);
-
-  const fetchAllProjects = () => {
+  useEffect(() => {
     setLoading(true);
     fetchImage()
       .then((res) => {
         setImages(res);
-        console.log();
+        console.log(res);
       })
       .catch((error) => {
         console.log(error);
-      })
-      .finally(() => {
-        setLoading(false);
       });
-  };
-//   useEffect(() => {
-//     fetchAllProjects();
+   
+  }, []);
 
-//     return () => {
-//       fetchAllProjects();
-//     };
-//   }, []);
 
-  // useEffect(() => {
-  //   // get projects base on item
-  //   if (item === "all") {
-  //     fetchProject().then((res) => {
-  //       setProjects(res);
-  //     });
-  //   } else {
-  //     const newProjects = projects.filter((project) => {
-  //       return project.category.title.toLowerCase() === item;
-  //     });
-  //     setProjects(newProjects);
-  //   }
-  // }, [item]);
-
-//   const handleClick = (e, index, val) => {
-//     if (val.title === "All") {
-//       setFilterItem("");
-//       setActive(index);
-//       fetchAllProjects();
-//     } else {
-//       setFilterItem(val.title.toLowerCase());
-//       setActive(index);
-//     }
-//   };
-
-  if (loading) return <div>Loading data....</div>;
+  // if (loading) return <div>Loading data....</div>;
   return (
     <section className="snap-center">
-      {/* <nav className="w-full ">
-        <ul className="flex flex-col md:flex-row justify-evenly items-center text-white">
-          {category.map((val, index) => {
-            return (
-              <li
-                onClick={(e) => {
-                  handleClick(e, index, val);
+      <div className="grid lg:grid-cols-4 gap-y-12 lg:gap-x-8 lg:gap-y-8">
+        {images.map((image, index) => {
+          return (
+            <AnimatePresence >
+              <motion.div
+             
+                initial={{
+                  opacity: 0,
+                  scale: 0,
                 }}
-                className={`${
-                  active === index ? "active" : ""
-                } cursor-pointer capitalize m-4`}
-                key={index}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: 1,
+                }}
+                exit={{
+                  opacity: 0,
+                  scale: 0,
+                }}
               >
-                {val.title}
-              </li>
-            );
-          })}
-        </ul>
-      </nav> */}
-      {/* // projects grid */}
-
-      <div className="grid lg:grid-cols-3 gap-y-12 lg:gap-x-8 lg:gap-y-8">
-        {images
-          .filter((val) =>
-            val.category.title.toLocaleLowerCase().includes(filterItem)
-          )
-          .map((val) => {
-            return (
-              <AnimatePresence>
-                <motion.div
-                  initial={{
-                    opacity: 0,
-                    scale: 0,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    scale: 1,
-                  }}
-                  transition={{
-                    duration: 1,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    scale: 0,
-                  }}
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center"
                 >
-                  <Photography item={val} key={val._id} />
-                </motion.div>
-              </AnimatePresence>
-            );
-          })}
+                  <div className="mb-6 h-[400px]  overflow-hidden">
+                    <img
+                      className="rounded-2xl object-cover h-[400px] "
+                      src={urlFor(image?.photo?.asset?._ref).url()}
+                      alt={image.alt}
+                    />
+                  </div>
+                  <p className="capitalize text-accent text-sm mb-3">
+                    {/* {item.category.title} */}
+                  </p>
+                  {/* <h3 className="text-2xl font-semibold capitalize mb-3">{item.name}</h3> */}
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          );
+         })} 
+                  <a className=" btn-red content-center" href="https://www.flickr.com/photos/saptha/" >
+            {" "}
+            View More
+          </a>
       </div>
     </section>
   );

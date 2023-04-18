@@ -25,7 +25,7 @@ const Instagram = () => {
         /> */}
         <InstagramFeed
           className="object-cover h-full w-[566px] md:mx-auto lg-mx-0 rounded-2xl"
-          token="your_access_token"
+          token="IGQVJYTmR0NXBfYzhxbmQ0Y29hRV9MUGlOV2lOVWd3VWJUWWtiOTdfZADQ4VENnUlNfT0NGRjVlTWlMQmRmV0g0THdDV1dtaGNYVmVsRUhNTi0tMW1hdzdEUU9CVEFBUzkweF9VMHVDTzBxVmFETVVycwZDZD"
           counter="6"
         />
       </div>

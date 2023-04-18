@@ -10,6 +10,8 @@ import {
   FiTag,
   FiMail,
   FiMapPin,
+  FiFacebook,
+  FiLinkedin,
 } from 'react-icons/fi';
 
 // companies icons
@@ -41,6 +43,7 @@ import SkillImg8 from './assets/img/skills/figma.png';
 import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
 import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
 import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
+import { FaFlickr } from 'react-icons/fa';
 
 // navigation
 export const navigation = [
@@ -77,20 +80,20 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiYoutube />,
-    href: '',
+    icon: <FiFacebook />,
+    href: 'https://www.facebook.com/saptha',
   },
   {
     icon: <FiInstagram />,
-    href: '',
+    href: 'https://www.instagram.com/saptha/',
   },
   {
-    icon: <FiGithub />,
-    href: '',
+    icon: <FiLinkedin />,
+    href: 'https://www.linkedin.com/in/saptha/',
   },
   {
-    icon: <FiDribbble />,
-    href: '',
+    icon: <FaFlickr />,
+    href: 'https://www.flickr.com/photos/saptha/with/51579733141/',
   },
 ];
 

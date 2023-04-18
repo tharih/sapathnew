@@ -2,12 +2,12 @@ import { client } from "../client";
 
 
 const query =`
-*[_type == "photography"]`;
+*[_type == "photography"][0...8] | order(_createdAt asc)`;
  
 
 export const fetchImage = async() => {
-    const image = await client.fetch(query);
-    return image
+    const images = await client.fetch(query);
+    return images
     
 }
 

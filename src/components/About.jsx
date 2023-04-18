@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Image from "../assets/img/about.webp";
+import Image from "../assets/img/sptha.jpg";
 import { fetchAbout } from "../utils/fetchAbout";
 import { motion } from "framer-motion";
 // import resume from "../assets/resume.pdf";
