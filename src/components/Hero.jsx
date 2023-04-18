@@ -20,7 +20,7 @@ const Hero = () => {
               I build & Design <br /> Web Interfaces.
             </h1>
             <p className="max-w-[480px] text-lg text-center lg:text-left text-white z-[10]">
-              Creative Designer & Developer located in Australia.
+            IT Solutions Specialist located in Australia.
             </p>
             <p className="max-w-[480px] text-lg text-center lg:text-left text-white z-[10]">
               Specialized in{" "}
@@ -29,7 +29,10 @@ const Hero = () => {
                   words={[
                     "Designing UI/UX",
                     "Creating Websites",
-                    "Designing Logo",
+                    "ERP ( microsoft Dynamics and Zoho books )",
+                    "Photography",
+                    "Cybersecurity project",
+                    "Microsoft M365 / modern workplace consultancy",
                   ]}
                   loop
                   cursor
