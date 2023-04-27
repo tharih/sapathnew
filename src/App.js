@@ -54,9 +54,9 @@ const App = () => {
       <Portfolio />
       <Photo />
       <Testimonials />
-      <section id="instagram" className="section bg-tertiary snap-center">
+      {/* <section id="instagram" className="section bg-tertiary snap-center">
       <Instagram />
-      </section>
+      </section> */}
       <Contact />
       <Footer />
       <BackToTopBtn />
