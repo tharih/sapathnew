@@ -2,7 +2,7 @@ import { client } from "../client";
 
 
 const query =`
-*[_type == "photography"][0...8] | order(_createdAt asc)`;
+*[_type == "photo"][0...8] | order(_createdAt asc)`;
  
 
 export const fetchImage = async() => {
