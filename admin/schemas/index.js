@@ -6,5 +6,7 @@ import about from './about'
 import service from './service'
 import testimonials from './testimonials'
 import project from './project'
+import photo from './photo'
 
-export const schemaTypes = [post,about, author, category,service,project,testimonials, blockContent]
+
+export const schemaTypes = [post,about, author, category,photo, service,project,testimonials, blockContent]

@@ -75,7 +75,7 @@ const Photographys = () => {
             </AnimatePresence>
           );
          })} 
-                  <a className=" btn-red content-center" href="https://www.flickr.com/photos/saptha/" >
+                  <a className=" btn-red content-center" href="https://www.flickr.com/photos/saptha/" target="_blank" >
             {" "}
             View More
           </a>

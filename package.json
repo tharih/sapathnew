@@ -15,6 +15,7 @@
     "react-ig-feed": "^1.7.0",
     "react-instagram-authless-feed": "jamesmoriarty/react-instagram-authless-feed#v2.0.0",
     "react-instagram-embed": "^3.0.0",
+    "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.0",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",

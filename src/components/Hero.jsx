@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex items-center bg-[#1C1D24] bg-cover bg-center bg-no-repeat overflow-hidden bg-[url('https://img.freepik.com/free-vector/cloud-internet-technology_53876-94170.jpg?w=1380&t=st=1682599828~exp=1682600428~hmac=96eaed56c7795b83841fc585b7d04e505178b037784083f0a4fdd50c8a47d8ad')] banner-after"
+      className="h-screen flex items-center bg-[#1C1D24] bg-cover bg-center bg-no-repeat overflow-hidden bg-[url('https://images.pexels.com/photos/4792729/pexels-photo-4792729.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] banner-after"
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
